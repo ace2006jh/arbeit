@@ -18,7 +18,7 @@ function LocationMap({ address, height }) {
       }
       // 로드 안됐으면 async 를 통해 비동기적으로 로드 시도, 실패하면 onerror, 성공하면 onload 호출 후 resolve 호출하여 Promise 완료처리.
       const script = document.createElement("script");
-      script.src = `//dapi.kakao.com/v2/maps/sdk.js?appkey=c9b3b5ea56ef481752e865cdbbb0335c&libraries=services,clusterer,drawing&autoload=false`;
+      script.src = `//dapi.kakao.com/v2/maps/sdk.js?appkey=e2f668aefda7ca1a71382a21f6e9d543&libraries=services,clusterer,drawing&autoload=false`;
       script.async = true;
       script.onload = () => resolve();
       script.onerror = () => reject(new Error("Kakao Maps SDK load error"));
